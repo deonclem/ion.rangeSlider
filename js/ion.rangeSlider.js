@@ -680,6 +680,7 @@
                         _width = $.data($toSlider[0], "x") || parseInt($toSlider[0].style.left, 10) || $toSlider.position().left,
                         x = _x + (_w / 2),
                         w = _width - _x;
+                    if(w < 1){w = 0;}
                     $diapason[0].style.left = x + "px";
                     $diapason[0].style.width = w + "px";
                 };
